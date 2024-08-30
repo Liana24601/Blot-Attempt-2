@@ -1,0 +1,28 @@
+/*
+title: The Hackman
+author: I.K.
+snapshot: IMG_5519.png
+*/
+
+const width = 125;
+const height = 125;
+
+setDocDimensions(width, height)
+
+const finalLines = [];
+
+const t = new bt.Turtle();
+
+let yeet = bt.randIntInRange(1, 100)
+
+let nope = bt.randIntInRange(1, 100)
+
+let yoink = bt.randIntInRange(1, 100)
+
+drawLines([
+    [[yoink, nope], [yoink + (yeet / 4), nope - yeet]],
+    [[yoink + (yeet / 4), nope - yeet], [yoink, nope - (yeet * (3/4))]],
+    [[yoink, nope], [yoink - (yeet / 4), nope - yeet]],
+   // [[yoink - (yeet / 4), nope - yeet]
+])
+
