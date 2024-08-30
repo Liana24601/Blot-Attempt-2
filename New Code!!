@@ -13,16 +13,35 @@ const finalLines = [];
 
 const t = new bt.Turtle();
 
-let yeet = bt.randIntInRange(1, 100)
+let counter = 0
 
-let nope = bt.randIntInRange(1, 100)
+while (counter <= 15) {
+  let bam = 70
 
-let yoink = bt.randIntInRange(1, 100)
+  let sigh = 125
 
-drawLines([
-    [[yoink, nope], [yoink + (yeet / 4), nope - yeet]],
-    [[yoink + (yeet / 4), nope - yeet], [yoink, nope - (yeet * (3/4))]],
-    [[yoink, nope], [yoink - (yeet / 4), nope - yeet]],
-   // [[yoink - (yeet / 4), nope - yeet]
-])
+  let yeet = bt.randIntInRange(1, bam)
+
+  let nope = bt.randIntInRange(1, sigh)
+
+  let yoink = bt.randIntInRange(1, sigh)
+
+  let yahoo = bt.randIntInRange(1, sigh)
+  
+  drawLines([
+      [[yoink, nope], [yoink + (yeet / 4), nope - yeet]],
+      [[yoink + (yeet / 4), nope - yeet], [yoink, nope - (yeet * (3/4))]],
+      [[yoink, nope], [yoink - (yeet / 4), nope - yeet]],
+      [[yoink - (yeet / 4), nope - yeet], [yoink, nope - (yeet * (3/4))]],
+  ])
+
+  drawLines([
+      [[yahoo, yahoo + 1], [yahoo, yahoo + 2]],
+      [[yahoo, yahoo + 2], [yahoo + 1, yahoo + 2]],
+      //[[yahoo + 1, yahoo + 2
+  ])
+  counter++;
+}
+
+
 
